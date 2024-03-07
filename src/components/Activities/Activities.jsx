@@ -24,7 +24,7 @@ const Activities = () => {
                   <h4>Quranic Studies</h4>
                   <p className="mb-4">
                     Offering classNamees on recitation (Tajweed), memorization
-                    (Hifz), and understanding (Tafseer) of the Quran.
+                    (Hifz), and understanding (Tafseer) of Quran.
                   </p>
                   <a href="/" className="btn btn-primary px-3">
                     Read More
