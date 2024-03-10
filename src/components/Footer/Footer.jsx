@@ -39,7 +39,7 @@ const Footer = () => {
             <div className="col-md-6 col-lg-6 col-xl-3">
               <div className="footer-item mt-5">
                 <h4 className="text-light mb-4">
-                  Al<span className="text-primary"> Ramzan</span>
+                  Al<span className="text-primary"> Ramadan</span>
                 </h4>
                 <p className="mb-4 text-secondary">
                   Established to provide a welcoming environment for individuals
@@ -127,7 +127,7 @@ const Footer = () => {
             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
               &copy;{" "}
               <a className="border-bottom" href="/">
-                Al Ramzan Islamic Institute {new Date().getFullYear()}
+                Al Ramadan Islamic Institute {new Date().getFullYear()}
               </a>
               , All Right Reserved.
             </div>

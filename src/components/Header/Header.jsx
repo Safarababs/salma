@@ -56,7 +56,7 @@ const Header = () => {
           <nav className="navbar navbar-light navbar-expand-lg py-3">
             <a href="/" className="navbar-brand">
               <h1 className="mb-0">
-                Al<span className="text-primary">Ramzan</span>
+                Al<span className="text-primary">Ramadan</span>
               </h1>
             </a>
             <button
@@ -81,11 +81,12 @@ const Header = () => {
                 <a href="#Activities" className="nav-item nav-link">
                   Activities
                 </a>
-
                 <a href="#contact" className="nav-item nav-link">
                   Contact
                 </a>
-
+                <a href="#gallery" className="nav-item nav-link">
+                  gallery
+                </a>
                 {/* <div className="nav-item dropdown">
                   <a
                     href="/"
@@ -127,7 +128,7 @@ const Header = () => {
               <div className="hero-header-inner animated zoomIn">
                 <p className="fs-4 text-dark">WELCOME TO</p>
                 <h1 className="display-1 mb-5 text-dark">
-                  Al Ramzan Islamic Institute
+                  Al Ramadan Islamic Institute
                 </h1>
                 <a href="#about" className="btn btn-primary py-3 px-5">
                   Read More

@@ -39,7 +39,7 @@ const About = () => {
             <div className="col-xl-6 wow fadeIn" data-wow-delay="0.5s">
               <h1 className="display-5 pb-4 m-0">About Us</h1>
               <p className="pb-4">
-                Al Ramzan Islamic Institute is dedicated to providing
+                Al Ramadan Islamic Institute is dedicated to providing
                 comprehensive Islamic education and fostering a deep
                 understanding of the Quran and Ahlul Bait. We strive to create a
                 nurturing environment where students can develop a strong

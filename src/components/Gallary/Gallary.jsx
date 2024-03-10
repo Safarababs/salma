@@ -40,9 +40,9 @@ const Gallery = () => {
   };
 
   return (
-    <section style={{ background: "#</section>" }}>
+    <section id="gallery">
       <div
-        className="mx-auto text-center mb-5 wow fadeIn"
+        className="mx-auto text-center mb-5 wow fadeIn galery-content"
         data-wow-delay="0.1s"
         style={{ maxWidth: "700px" }}
       >
