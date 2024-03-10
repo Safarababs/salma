@@ -46,7 +46,7 @@ const Footer = () => {
                   seeking to deepen their understanding of Islam and enrich
                   their faith-filled journeys.
                 </p>
-                <a href="/" className="btn btn-primary py-2 px-4">
+                <a href="#contact" className="btn btn-primary py-2 px-4">
                   Donate Now
                 </a>
               </div>
@@ -62,8 +62,8 @@ const Footer = () => {
                     <span className="flex-shrink-0 btn-square bg-primary me-3 p-4">
                       <i className="fa fa-map-marker-alt text-dark"></i>
                     </span>
-                    <a href="/" className="text-body">
-                      123 Street, New York, USA
+                    <a href="#contact" className="text-body">
+                      Ali Pur Chatta, Gujranwala, Pakistan
                     </a>
                   </div>
                   <h6 className="text-secondary mt-4 mb-0">Our Mobile</h6>
@@ -71,7 +71,7 @@ const Footer = () => {
                     <span className="flex-shrink-0 btn-square bg-primary me-3 p-4">
                       <i className="fa fa-phone-alt text-dark"></i>
                     </span>
-                    <a href="/" className="text-body">
+                    <a href="tel:00923002774569" className="text-body">
                       +92 300 2774569
                     </a>
                   </div>
@@ -84,18 +84,18 @@ const Footer = () => {
                   Explore<span className="text-primary"> Links</span>
                 </h4>
                 <div className="d-flex flex-column align-items-start">
-                  <a className="text-body mb-2" href="/">
+                  <a className="text-body mb-2" href="#home">
                     <i className="fa fa-check text-primary me-2"></i>Home
                   </a>
-                  <a className="text-body mb-2" href="/">
+                  <a className="text-body mb-2" href="#about">
                     <i className="fa fa-check text-primary me-2"></i>About Us
                   </a>
 
-                  <a className="text-body mb-2" href="/">
+                  <a className="text-body mb-2" href="#contact">
                     <i className="fa fa-check text-primary me-2"></i>Contact us
                   </a>
 
-                  <a className="text-body mb-2" href="/">
+                  <a className="text-body mb-2" href="#contact">
                     <i className="fa fa-check text-primary me-2"></i>Donations
                   </a>
                 </div>
@@ -104,32 +104,17 @@ const Footer = () => {
             <div className="col-md-6 col-lg-6 col-xl-3">
               <div className="footer-item mt-5">
                 <h4 className="text-light mb-4">
-                  Latest<span className="text-primary"> Posts</span>
+                  التماس<span className="text-primary"> دعا</span>
                 </h4>
                 <div className="d-flex border-bottom border-secondary py-4">
-                  <img
-                    src="img/blog-mini-1.jpg"
-                    className="img-fluid flex-shrink-0"
-                    alt=""
-                  />
                   <div className="ps-3">
-                    <p className="mb-0 text-muted">01 Jan 2024</p>
-                    <a href="/" className="text-body">
-                      Lorem ipsum dolor sit amet elit eros vel
-                    </a>
-                  </div>
-                </div>
-                <div className="d-flex py-4">
-                  <img
-                    src="img/blog-mini-2.jpg"
-                    className="img-fluid flex-shrink-0"
-                    alt=""
-                  />
-                  <div className="ps-3">
-                    <p className="mb-0 text-muted">01 Jan 2024</p>
-                    <a href="/" className="text-body">
-                      Lorem ipsum dolor sit amet elit eros vel
-                    </a>
+                    <p className="mb-0 text-muted">
+                      اَللّہمَّ كُنْ لِوَلِيِّكَ الْحُجَّۃ بْنِ الْحَسَنِ
+                      صَلَواتُكَ عَلَيْہ وَعَلى آبائِہ في ھذِہ السّاعَۃ وَفي
+                      كُلِّ ساعَۃ وَلِيّاً وَحافِظاً وَقائِداً وَناصِراً
+                      وَدَليلاً وَعَيْناً حَتّى تُسْكِنَہ اَرْضَكَ طَوْعاً
+                      وَتُمَتِّعَہ فيہا طَويلاً۔
+                    </p>
                   </div>
                 </div>
               </div>

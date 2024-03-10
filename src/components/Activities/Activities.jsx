@@ -4,7 +4,7 @@ const Activities = () => {
   return (
     <>
       {/* <!-- Activities Start --> */}
-      <div className="container-fluid activities py-5">
+      <div className="container-fluid activities py-5" id="Activities">
         <div className="container py-5">
           <div
             className="mx-auto text-center mb-5 wow fadeIn"
@@ -26,8 +26,8 @@ const Activities = () => {
                     Offering classNamees on recitation (Tajweed), memorization
                     (Hifz), and understanding (Tafseer) of Quran.
                   </p>
-                  <a href="/" className="btn btn-primary px-3">
-                    Read More
+                  <a href="#contact" className="btn btn-primary px-3">
+                    Learn More
                   </a>
                 </div>
               </div>
@@ -45,8 +45,8 @@ const Activities = () => {
                     sayings and actions of the Prophet Muhammad (peace be upon
                     him).
                   </p>
-                  <a href="/" className="btn btn-primary px-3">
-                    Read More
+                  <a href="#contact" className="btn btn-primary px-3">
+                    Learn More
                   </a>
                 </div>
               </div>
@@ -64,8 +64,8 @@ const Activities = () => {
                     Islamic History: Exploring the history of Islam and its
                     civilizations.
                   </p>
-                  <a href="/" className="btn btn-primary px-3">
-                    Read More
+                  <a href="#contact" className="btn btn-primary px-3">
+                    Learn More
                   </a>
                 </div>
               </div>
@@ -82,8 +82,8 @@ const Activities = () => {
                     Teaching Arabic for better understanding of the Quran and
                     Islamic texts.
                   </p>
-                  <a href="/" className="btn btn-primary px-3">
-                    Read More
+                  <a href="#contact" className="btn btn-primary px-3">
+                    Learn More
                   </a>
                 </div>
               </div>
@@ -100,8 +100,8 @@ const Activities = () => {
                     Workshops and lectures on building spirituality and a strong
                     connection with Allah.
                   </p>
-                  <a href="/" className="btn btn-primary px-3">
-                    Read More
+                  <a href="#contact" className="btn btn-primary px-3">
+                    Learn More
                   </a>
                 </div>
               </div>
@@ -118,8 +118,8 @@ const Activities = () => {
                     Programs to engage with the broader community and promote
                     understanding of Islam.
                   </p>
-                  <a href="/" className="btn btn-primary px-3">
-                    Read More
+                  <a href="#contact" className="btn btn-primary px-3">
+                    Learn More
                   </a>
                 </div>
               </div>

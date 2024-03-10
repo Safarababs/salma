@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       {/* <!-- About Satrt --> */}
-      <div className="container-fluid about py-5">
+      <div className="container-fluid about py-5" id="about">
         <div className="container py-5">
           <div className="row g-5 mb-5">
             <div className="col-xl-6">
