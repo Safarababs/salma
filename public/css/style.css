@@ -467,6 +467,27 @@ h6,
 }
 /*** testimonial End ***/
 
+/* Knowledge hub section started */
+/* vidos section */
+/* Responsive CSS for Videos Component */
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-wrapper {
+  margin: 10px;
+  max-width: 360px;
+  width: 100%;
+}
+
+.video-item {
+  width: 100%;
+  height: auto;
+}
+/* videos section end */
+
 /*** Footer Start ***/
 .footer {
   margin-top: 6rem;
