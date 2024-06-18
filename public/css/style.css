@@ -488,6 +488,139 @@ h6,
 }
 /* videos section end */
 
+/* majalis section start */
+
+/* books corner start */
+.book-list {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.book img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.book-info {
+  margin-top: 10px;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+/* boks corner end */
+
+/* majalis section end */
+
+/* makala jaat section start */
+/* Articles.css */
+
+.articles {
+  display: grid;
+  gap: 2rem;
+}
+
+.article {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article h2 {
+  margin-bottom: 0.5rem;
+}
+
+.article p {
+  margin-bottom: 1rem;
+}
+
+.article button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.article button:hover {
+  background-color: #0056b3;
+}
+
+/* ArticlesPage.css */
+
+.articles-page {
+  padding-top: 9rem;
+  max-width: 800px;
+  margin: 0 auto;
+  direction: rtl; /* Right-to-left text direction for Urdu */
+  font-family: "Noto Nastaliq Urdu", serif; /* Applying Noto Nastaliq Urdu font */
+}
+
+.articles-page header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.articles-page header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.articles-page main {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article {
+  margin-bottom: 2rem;
+}
+
+.article h2 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.article p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* makala jaat section end */
+
 /*** Footer Start ***/
 .footer {
   margin-top: 6rem;

@@ -10,7 +10,7 @@ import Results from "./Quiz/Result/ResultForAll";
 import IndividualResult from "./Quiz/Result/ResultForIndividualStudent";
 import QuizAccess from "./Quiz/Question/QuizAccess";
 import Gallery from "./Gallary/Gallary";
-import ReadArticles from "./Knowledge Hub/Makala/ReadArticles";
+import ArticlesPage from "./Knowledge Hub/Makala/ArticlesPage";
 import Videos from "./Knowledge Hub/Videos/Videos";
 import Majalis from "./Knowledge Hub/Majalis/Majalis";
 import KidsStories from "./Knowledge Hub/Kids Corner/Stories/KidsStories";
@@ -45,7 +45,7 @@ const App = () => {
           <Route path="/majalis" element={<Majalis />} />
           <Route path="/BachaParty" element={<KidsStories />} />
           <Route path="/kidsstories" element={<KidsStories />} />
-          <Route path="/makalajaat" element={<ReadArticles />} />
+          <Route path="/makalajaat" element={<ArticlesPage />} />
           <Route
             path="/quiz"
             element={

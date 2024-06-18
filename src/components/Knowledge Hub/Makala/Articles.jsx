@@ -1,7 +1,9 @@
+// Articles.js
+
 import React from "react";
 
 function Articles({ articles }) {
-  const copyContent = (content) => {
+  const handleCopy = (content) => {
     navigator.clipboard
       .writeText(content)
       .then(() => alert("Content copied to clipboard"))
@@ -9,19 +11,14 @@ function Articles({ articles }) {
   };
 
   return (
-    <section style={{ paddingTop: "5rem" }}>
-      <div>
-        <h2>Makala Jaat section will be updated and beautify soon</h2>
-        {articles.map((article, index) => (
-          <div key={index}>
-            <h3>{article.title}</h3>
-            <p>{article.content}</p>
-            <button onClick={() => copyContent(article.content)}>
-              Copy Text
-            </button>
-          </div>
-        ))}
-      </div>
+    <section className="articles">
+      {articles.map((article, index) => (
+        <article key={index} className="article">
+          <h2>{article.title}</h2>
+          <p>{article.content}</p>
+          <button onClick={() => handleCopy(article.content)}>Copy Text</button>
+        </article>
+      ))}
     </section>
   );
 }
