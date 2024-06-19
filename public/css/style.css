@@ -224,6 +224,46 @@ h6,
 }
 /*** Hero Header ***/
 
+/* Search bar start*/
+
+/* src/App.css or src/components/SearchBar.css */
+.search-bar {
+  position: relative;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.search-results {
+  position: absolute;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.search-results li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search-results li:hover {
+  background-color: #f0f0f0;
+}
+
+/* src/components/SearchBar.css */
+mark {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+}
+
+/* Search bar end */
+
 /*** About Start ***/
 .about a.btn.btn-light:hover {
   background: var(--bs-dark) !important;

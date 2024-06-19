@@ -1,4 +1,5 @@
 import React from "react";
+import LazyVideo from "./LazyVideo";
 import videoFile from "../Videos/Salma Batool.mp4";
 import videoFile1 from "../Videos/salma1.mp4";
 import videoFile2 from "../Videos/salma2.mp4";
@@ -17,22 +18,25 @@ const Videos = () => {
           </div>
           <div className="videos">
             <div className="video-wrapper">
-              <video className="video-item" controls>
-                <source src={videoFile} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <LazyVideo
+                className="video-item"
+                src={videoFile}
+                type="video/mp4"
+              />
             </div>
             <div className="video-wrapper">
-              <video className="video-item" controls>
-                <source src={videoFile1} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <LazyVideo
+                className="video-item"
+                src={videoFile1}
+                type="video/mp4"
+              />
             </div>
             <div className="video-wrapper">
-              <video className="video-item" controls>
-                <source src={videoFile2} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <LazyVideo
+                className="video-item"
+                src={videoFile2}
+                type="video/mp4"
+              />
             </div>
           </div>
         </div>

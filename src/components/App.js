@@ -14,6 +14,7 @@ import ArticlesPage from "./Knowledge Hub/Makala/ArticlesPage";
 import Videos from "./Knowledge Hub/Videos/Videos";
 import Majalis from "./Knowledge Hub/Majalis/Majalis";
 import KidsStories from "./Knowledge Hub/Kids Corner/Stories/KidsStories";
+import SearchBar from "./Search Bar/SearchBar";
 
 const App = () => {
   const currentDate = new Date();
@@ -34,8 +35,10 @@ const App = () => {
     <>
       <Router>
         <Header />
+
         <Routes>
           <Route path="/" exact element={<Home />}></Route>
+
           <Route path="/student" exact element={<Student />}></Route>
           <Route path="/gallery" element={<Gallery />}></Route>
           <Route path="/results" element={<Results />} />
@@ -65,6 +68,7 @@ const App = () => {
             }
           ></Route>
         </Routes>
+        <SearchBar />
         <Footer />
       </Router>
     </>
