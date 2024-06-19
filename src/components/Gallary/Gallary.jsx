@@ -16,8 +16,10 @@ import gallery11 from "./GallaryImages/11.jpg";
 import gallery12 from "./GallaryImages/12.jpg";
 import gallery13 from "./GallaryImages/13.jpg";
 import gallery14 from "./GallaryImages/14.jpg";
+import gallery15 from "./GallaryImages/15.jpg";
 
 const images = [
+  gallery15,
   gallery14,
   gallery9,
   gallery10,
