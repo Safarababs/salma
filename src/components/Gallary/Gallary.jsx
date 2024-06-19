@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import gallery1 from "./GallaryImages/1.jpg";
 import gallery2 from "./GallaryImages/2.jpg";
@@ -30,13 +31,28 @@ const images = [
   gallery1,
 ];
 
+// const MyComponent = () => (
+//   <LazyLoadImage
+//     alt="image description"
+//     height={200}
+//     src="image-url.jpg"
+//     width={300}
+//   />
+// );
+
 const Gallery = () => {
   return (
     <section id="gallery">
       <div className="gallery-container">
         {images.map((Url, index) => (
           <div key={index} className="gallery-item">
-            <img src={Url} alt="contact developer" loading="lazy" />
+            {/* <img src={Url} alt="contact developer" loading="lazy" /> */}
+            <LazyLoadImage
+              alt="image description"
+              // height={200}
+              src={Url}
+              // width={300}
+            />
           </div>
         ))}
       </div>
