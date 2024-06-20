@@ -1,18 +1,9 @@
 import React from "react";
+import SearchBar from "../Search Bar/SearchBar";
 
 const Header = () => {
   return (
     <>
-      {/* // spinner start */}
-      {/* <div
-        id="spinner"
-        className="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center"
-      >
-        <div className="spinner-grow text-primary" role="status"></div>
-      </div> */}
-
-      {/* // spinner end */}
-
       {/* // top bar start */}
       <div className="container-fluid fixed-top">
         <div className="container topbar d-none d-lg-block">
@@ -28,6 +19,7 @@ const Header = () => {
                     <span>+92 300 2774569</span>
                   </a>
                 </div>
+
                 {/* <div className="h-100 d-inline-flex align-items-center">
                   <span className="far fa-envelope me-2 text-dark"></span>
                   <a href="/" className="text-secondary">
@@ -35,6 +27,7 @@ const Header = () => {
                   </a>
                 </div> */}
               </div>
+
               <div className="col-lg-5 text-end">
                 <div className="h-100 d-inline-flex align-items-center">
                   <span className="text-body">Follow Us:</span>
@@ -53,6 +46,11 @@ const Header = () => {
           </div>
         </div>
         <div className="container">
+          <div className="ms-auto d-flex align-items-center">
+            <SearchBar />
+          </div>
+        </div>
+        <div className="container">
           <nav className="navbar navbar-light navbar-expand-lg py-3">
             <a href="/" className="navbar-brand">
               <h1 className="mb-0">
@@ -67,6 +65,7 @@ const Header = () => {
             >
               <span className="fa fa-bars text-primary"></span>
             </button>
+
             <div
               className="collapse navbar-collapse bg-white"
               id="navbarCollapse"
@@ -98,9 +97,6 @@ const Header = () => {
                     Knowledge Hub
                   </a>
                   <div className="dropdown-menu m-0 rounded-0">
-                    <a href="/BachaParty" className="dropdown-item">
-                      Kids Corner
-                    </a>
                     <a href="/kidsstories" className="dropdown-item">
                       Kids Stories
                     </a>
@@ -119,6 +115,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
+
               <a
                 href="#contact"
                 className="btn btn-primary py-2 px-4 d-none d-xl-inline-block"

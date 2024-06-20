@@ -1,4 +1,3 @@
-// src/components/Matches.jsx
 import React from "react";
 
 const Matches = ({ keyword, matches }) => {

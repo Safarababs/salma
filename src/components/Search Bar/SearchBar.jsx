@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import contentIndex from "./data/contentIndex";
 import Matches from "./Matches";
 
@@ -30,20 +29,20 @@ const SearchBar = () => {
     setMatches([title, content]);
   };
 
-  //   const handleCloseMatches = () => {
-  //     setShowMatches(false);
-  //     setMatches([]);
-  //   };
-
   return (
     <div className="search-bar">
-      <input
-        type="text"
-        placeholder="Search..."
-        value={query}
-        onChange={handleSearch}
-        className="search-input"
-      />
+      <div className="search-input-container">
+        <input
+          type="text"
+          placeholder="Search Anything"
+          value={query}
+          onChange={handleSearch}
+          className="search-input"
+        />
+        <span className="search-icon">
+          <i className="fa fa-search"></i>
+        </span>
+      </div>
       {results.length > 0 && !showMatches && (
         <ul className="search-results">
           {results.map((result, index) => (

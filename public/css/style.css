@@ -226,43 +226,172 @@ h6,
 
 /* Search bar start*/
 
-/* src/App.css or src/components/SearchBar.css */
 .search-bar {
   position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 3px auto 0 auto;
+  padding: 3px auto 0 auto;
 }
 
-.search-bar input {
-  width: 100%;
+.search-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(241, 193, 82, 0.7);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px; /* Adjust left position as needed */
+  color: #888;
+}
+
+.search-icon i {
   padding: 8px;
-  box-sizing: border-box;
+}
+
+.search-input {
+  width: 100%;
+  padding-left: 40px; /* Adjust padding to accommodate icon */
+  padding-right: 10px; /* Adjust padding as needed */
+  border: none;
+  outline: none;
 }
 
 .search-results {
   position: absolute;
+  z-index: 10; /* Ensure search results are on top */
+  top: calc(100% + 5px); /* Position below input */
+  left: 0;
   width: 100%;
-  background: white;
+  background: #fff;
   border: 1px solid #ccc;
+  border-top: none; /* Hide top border to merge with input */
   max-height: 200px;
   overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
 }
 
 .search-results li {
-  padding: 8px;
+  padding: 10px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #eee;
 }
 
 .search-results li:hover {
   background-color: #f0f0f0;
 }
 
-/* src/components/SearchBar.css */
-mark {
+.highlight {
   background-color: yellow;
-  color: black;
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .search-results {
+    z-index: 100; /* Adjust z-index for mobile devices */
+  }
+}
+
+@media (max-width: 992px) {
+  .search-bar {
+    display: block; /* Ensure search bar is always visible */
+    margin-top: 3px; /* Adjust margin as needed */
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}
+
+@media (max-width: 450px) {
+  .search-bar {
+    margin-top: 15px;
+  }
+}
+
 /* Search bar end */
+
+/* home section start */
+
+/* src/styles/Home.css */
+
+/* General styles */
+.home-container {
+  padding-top: 60px; /* Adjust as needed */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Grid layout for videos, stories, and articles */
+.content-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.content-item {
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.content-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.item-content {
+  padding: 20px;
+}
+
+.item-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.item-text {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content-section {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+
+  .content-item {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+/* home section end */
 
 /*** About Start ***/
 .about a.btn.btn-light:hover {
@@ -508,8 +637,24 @@ mark {
 /*** testimonial End ***/
 
 /* Knowledge hub section started */
+
+/* kids stories section start */
+.lazy-story {
+  margin-bottom: 20px;
+}
+
+.lazy-story h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.lazy-story p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* kids stories section end */
 /* vidos section */
-/* Responsive CSS for Videos Component */
+
 .videos {
   display: flex;
   flex-wrap: wrap;
@@ -526,6 +671,23 @@ mark {
   width: 100%;
   height: auto;
 }
+
+.lazy-video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Adjust max-width as per your design */
+  margin: 0 auto; /* Center align */
+}
+
+.lazy-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* videos section end */
 
 /* majalis section start */
@@ -615,6 +777,20 @@ mark {
 
 .article button:hover {
   background-color: #0056b3;
+}
+
+.lazy-article {
+  margin-bottom: 20px;
+}
+
+.lazy-article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.lazy-article p {
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 /* ArticlesPage.css */

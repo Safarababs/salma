@@ -13,8 +13,7 @@ import Gallery from "./Gallary/Gallary";
 import ArticlesPage from "./Knowledge Hub/Makala/ArticlesPage";
 import Videos from "./Knowledge Hub/Videos/Videos";
 import Majalis from "./Knowledge Hub/Majalis/Majalis";
-import KidsStories from "./Knowledge Hub/Kids Corner/Stories/KidsStories";
-import SearchBar from "./Search Bar/SearchBar";
+import KidsStories from "./Knowledge Hub/Kids Corner/KidsStories";
 
 const App = () => {
   const currentDate = new Date();
@@ -68,7 +67,6 @@ const App = () => {
             }
           ></Route>
         </Routes>
-        <SearchBar />
         <Footer />
       </Router>
     </>
