@@ -10,8 +10,6 @@ import Contact from "../Contact/Contact";
 import Team from "../Team/Team";
 import video from "../Knowledge Hub/Videos/Salma Batool.mp4";
 const Home = () => {
-  // Example data for video, story, and article
-
   const story = {
     title: "مباہلہ",
     content: `
@@ -74,7 +72,7 @@ Your welcome dear good by:.زهرا
                   Al Ramadan Islamic Institute
                 </h1>
                 <a href="#about" className="btn btn-primary py-3 px-5">
-                  Read More
+                  Know More
                 </a>
               </div>
             </div>
@@ -82,59 +80,54 @@ Your welcome dear good by:.زهرا
         </div>
       </div>
 
-      {/* Video Section */}
-      <section className="content-section video-section">
-        <div className="container">
-          <h2 className="section-title">Watch Our Latest Video</h2>
-          <div className="content-grid">
-            <div className="content-item">
-              <LazyVideo src={video} type="video/mp4" className="video-item" />
-              <div className="button-wrapper">
-                <Link to="/videos" className="btn btn-primary">
-                  Watch More Videos
-                </Link>
+      <section className="content-section">
+        {/* Kid's Story Section */}
+        <div className="content-section story-section">
+          <div className="container">
+            <h2 className="section-title">Kid's Story</h2>
+            <div className="content-grid">
+              <div className="content-item">
+                <LazyStory
+                  title={story.title}
+                  content={story.content}
+                  className="story-item"
+                />
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Kid's Story Section */}
-      <section className="content-section story-section">
-        <div className="container">
-          <h2 className="section-title">Kid's Story</h2>
-          <div className="content-grid">
-            <div className="content-item">
-              <LazyStory
-                title={story.title}
-                content={story.content}
-                className="story-item"
-              />
-              <div className="button-wrapper">
-                <Link to="/kidsstories" className="btn btn-primary">
-                  Read More
-                </Link>
+        {/* Video Section */}
+        <div className="content-section video-section">
+          <div className="container">
+            <h2 className="section-title">Watch Our Latest Video</h2>
+            <div className="content-grid">
+              <div className="content-item">
+                <LazyVideo
+                  src={video}
+                  type="video/mp4"
+                  className="video-item"
+                />
+                <div className="button-wrapper">
+                  <Link to="/videos" className="btn btn-primary">
+                    Watch More Videos
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Article Section */}
-      <section className="content-section article-section">
-        <div className="container">
-          <h2 className="section-title">Latest Article</h2>
-          <div className="content-grid">
-            <div className="content-item">
-              <LazyArticle
-                title={article.title}
-                content={article.content}
-                className="article-item"
-              />
-              <div className="button-wrapper">
-                <Link to="/makalajaat" className="btn btn-primary">
-                  Read More Articles
-                </Link>
+        {/* Article Section */}
+        <div className="content-section article-section">
+          <div className="container">
+            <h2 className="section-title">Latest Article</h2>
+            <div className="content-grid">
+              <div className="content-item">
+                <LazyArticle
+                  title={article.title}
+                  content={article.content}
+                  className="article-item"
+                />
               </div>
             </div>
           </div>

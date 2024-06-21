@@ -1,12 +1,15 @@
 import React from "react";
+import { useLanguage } from "../language/language";
 import about1 from "../img/about-1.jpg";
 import about2 from "../img/about-2.jpg";
 import about3 from "../img/about-3.jpg";
 
 const About = () => {
+  const { language } = useLanguage(); // Access language context
+
   return (
     <>
-      {/* <!-- About Satrt --> */}
+      {/* <!-- About Start --> */}
       <div className="container-fluid about py-5" id="about">
         <div className="container py-5">
           <div className="row g-5 mb-5">
@@ -37,13 +40,13 @@ const About = () => {
               </div>
             </div>
             <div className="col-xl-6 wow fadeIn" data-wow-delay="0.5s">
-              <h1 className="display-5 pb-4 m-0">About Us</h1>
+              <h1 className="display-5 pb-4 m-0">
+                {language === "ur" ? "ہمارے بارے میں" : "About Us"}
+              </h1>
               <p className="pb-4">
-                Al Ramadan Islamic Institute is dedicated to providing
-                comprehensive Islamic education and fostering a deep
-                understanding of the Quran and Ahlul Bait. We strive to create a
-                nurturing environment where students can develop a strong
-                connection with their faith and community.
+                {language === "ur"
+                  ? "الرمضان اسلامک انسٹی ٹیوٹ موقف پیش کرنے پر مختص ہے, اسلامی تعلیم فراہم کرنے اور قرآن اور اہل بیت کے معمولات کو گہرے معہودہ کے تحت بھرپور تعلیم دینے کے لیے۔ ہم اس بات کی کوشش کرتے ہیں کہ طلباء اپنے یقینی معاشرتی تعلقات اور اپنے مذہبی معاشرتی تعلقات کو بہتر بنائیں۔"
+                  : "Al Ramadan Islamic Institute is dedicated to providing comprehensive Islamic education and fostering a deep understanding of the Quran and Ahlul Bait. We strive to create a nurturing environment where students can develop a strong connection with their faith and community."}
               </p>
               <div className="row g-4 mb-4">
                 <div className="col-md-6">
@@ -52,11 +55,11 @@ const About = () => {
                       <i className="fa fa-eye text-dark fa-4x mb-5 pb-2"></i>
                     </span>
                     <div className="ms-4">
-                      <h5>Our Vision</h5>
+                      <h5>{language === "ur" ? "ہمارا ویژن" : "Our Vision"}</h5>
                       <p>
-                        We aspire to be a leading center for authentic Islamic
-                        education, fostering vibrant communities of knowledge
-                        and understanding that inspire individuals globally.
+                        {language === "ur"
+                          ? "ہم ایک معتبر اسلامی تعلیم کے مرکز بننے کی خواہش رکھتے ہیں, جہاں علم و فہم کے روشن مجتمعات کو نشانہ بناتے ہیں جو دنیا بھر کے افراد کو محرک کرتے ہیں۔"
+                          : "We aspire to be a leading center for authentic Islamic education, fostering vibrant communities of knowledge and understanding that inspire individuals globally."}
                       </p>
                     </div>
                   </div>
@@ -67,12 +70,11 @@ const About = () => {
                       <i className="fa fa-flag text-dark fa-4x mb-5 pb-2"></i>
                     </span>
                     <div className="ms-4">
-                      <h5>Our Mission</h5>
+                      <h5>{language === "ur" ? "ہمارا مشن" : "Our Mission"}</h5>
                       <p>
-                        Dedicated to empowering individuals through
-                        comprehensive and accessible Islamic learning
-                        experiences, promoting peace, and fostering positive
-                        contributions to society.
+                        {language === "ur"
+                          ? "پوری وسعت کے اور دستیاب اسلامی تعلیم تجربات کے ذریعے فردوں کو مختصر کرنے کے لیے وقت دینے کے لیے وقت دینے کے لیے، امن کو بڑھانے کے لیے، اور معاشرت میں مثبت انداز سے مشارکت کے فراہم کرنے کے لیے۔"
+                          : "Dedicated to empowering individuals through comprehensive and accessible Islamic learning experiences, promoting peace, and fostering positive contributions to society."}
                       </p>
                     </div>
                   </div>
@@ -90,8 +92,9 @@ const About = () => {
               </div>
               <div className="col-lg text-center text-lg-start">
                 <h1 className="mb-0">
-                  Every Muslim Needs To Realise The Importance Of The "Pillar"
-                  Of Islam
+                  {language === "ur"
+                    ? "ہر مسلمان کو اسلام کی اہمیت سمجھنے کی ضرورت ہے"
+                    : "Every Muslim Needs To Realise The Importance Of The 'Pillar' Of Islam"}
                 </h1>
               </div>
             </div>

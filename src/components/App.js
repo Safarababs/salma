@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { LanguageProvider } from "./language/language";
 import Header from "./Header/Header";
-
 import Student from "./Student/Student";
 import Home from "./Home/Home";
 import Footer from "./Footer/Footer";
@@ -19,27 +19,24 @@ const App = () => {
   const currentDate = new Date();
   const today = currentDate.getUTCDate();
   const currentHour = currentDate.getUTCHours() + 5;
-  // test date and time
 
   const targetDate = 8;
   const EnglishMonth = "April";
   const UrduMonth = "اپریل";
-
-  // jobs need to be done
-  // need to add view more button
-
   const from = 9;
   const to = 21;
+
   return (
-    <>
+    <LanguageProvider>
+      {" "}
+      {/* Wrap the entire application with LanguageProvider */}
       <Router>
         <Header />
 
         <Routes>
-          <Route path="/" exact element={<Home />}></Route>
-
-          <Route path="/student" exact element={<Student />}></Route>
-          <Route path="/gallery" element={<Gallery />}></Route>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/student" exact element={<Student />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/results" element={<Results />} />
           <Route path="/resultcheck" element={<IndividualResult />} />
           <Route path="/salma" element={<Quiz />} />
@@ -65,11 +62,11 @@ const App = () => {
                 />
               )
             }
-          ></Route>
+          />
         </Routes>
         <Footer />
       </Router>
-    </>
+    </LanguageProvider>
   );
 };
 
