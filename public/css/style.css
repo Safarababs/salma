@@ -1,4 +1,8 @@
 /*** Spinner Start ***/
+* {
+  margin: 0;
+  padding: 0;
+}
 
 #spinner {
   opacity: 0;
@@ -45,7 +49,6 @@ h3,
 .h2,
 .h3 {
   font-weight: 700 !important;
-  font-family: "Open", sans-serif !important;
 }
 
 h4,
@@ -68,6 +71,7 @@ h6,
 .btn {
   font-weight: 600;
   transition: 0.5s;
+  border-radius: 5px;
 }
 
 .btn-square {
@@ -199,39 +203,14 @@ h6,
 }
 /*** Navbar End ***/
 
-/*** Hero Header ***/
-.hero-header {
-  margin-bottom: 6rem;
-  padding-top: 10rem;
-  padding-bottom: 6rem;
-  background: url("../img/1.jpg"), center center no-repeat;
-  background-size: cover;
-}
-
-.hero-header .hero-header-inner {
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.5);
-}
-
-@media (max-width: 992px) {
-  .hero-header {
-    padding-top: 8rem;
-  }
-}
-
-.hero-header .breadcrumb-item {
-  font-size: 18px;
-}
-/*** Hero Header ***/
-
 /* Search bar start*/
 
 .search-bar {
   position: relative;
   width: 100%;
   max-width: 800px;
-  margin: 18px auto;
-  padding: 18px auto;
+  margin: 10px auto;
+  padding: 10px auto;
 }
 
 .search-input-container {
@@ -315,12 +294,30 @@ h6,
 
 /* home section start */
 
-/* src/styles/Home.css */
-
-/* General styles */
-.home-container {
-  padding-top: 15px; /* Adjust as needed */
+/*** Hero Header ***/
+.hero-header {
+  margin-bottom: 6rem;
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  background: url("../img/1.jpg"), center center no-repeat;
+  background-size: cover;
 }
+
+.hero-header .hero-header-inner {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 992px) {
+  .hero-header {
+    padding-top: 8rem;
+  }
+}
+
+.hero-header .breadcrumb-item {
+  font-size: 18px;
+}
+/*** Hero Header ***/
 
 .container {
   max-width: 1200px;
@@ -331,8 +328,9 @@ h6,
 .section-title {
   text-align: center;
   font-size: 32px;
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
   color: #333;
+  font-family: "Noto Nastaliq Urdu";
 }
 
 .button-wrapper {
@@ -355,11 +353,19 @@ h6,
   max-height: 600px; /* Adjust container width as per your design */
 }
 
+.story-section,
+.article-section {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+}
+
 .story-item,
 .article-item {
   max-width: 300px;
   max-height: 600px;
-  background-color: #f2f2f2;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -378,11 +384,11 @@ h6,
 
 .story-item p,
 .article-item p {
-  line-height: 1.6;
+  line-height: 2.2;
   color: #666;
-  text-align: right;
+  text-align: center;
   font-family: "Noto Nastaliq Urdu", serif;
-  direction: ltr;
+  direction: rtl;
 }
 
 .story-item .btn,
@@ -562,7 +568,7 @@ h6,
 #gallery {
   background: url("../img/1.jpg");
   padding: 20px;
-  margin-top: 150px; /* Adjust this value based on the height of your navbar */
+  margin-top: 200px; /* Adjust this value based on the height of your navbar */
 }
 
 /* Gallery Container */

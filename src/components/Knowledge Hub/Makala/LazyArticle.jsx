@@ -24,7 +24,7 @@ const LazyArticle = ({ className, ...props }) => {
     return (
       <div className={`article-item ${className}`}>
         <h2>{title}</h2>
-        <p>{truncatedContent}</p>
+        <p>{truncatedContent + "....."}</p>
         {remainingContent.length > 0 && (
           <Link to="/kidsarticles" className="btn btn-primary">
             Read Full Article

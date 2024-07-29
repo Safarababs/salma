@@ -84,7 +84,7 @@ Your welcome dear good by:.زهرا
         {/* Kid's Story Section */}
         <div className="content-section story-section">
           <div className="container">
-            <h2 className="section-title">Kid's Story</h2>
+            <h2 className="section-title">بچوں کی کہانیاں</h2>
             <div className="content-grid">
               <div className="content-item">
                 <LazyStory
@@ -109,7 +109,7 @@ Your welcome dear good by:.زهرا
                 />
                 <div className="button-wrapper">
                   <Link to="/videos" className="btn btn-primary">
-                    Watch More Videos
+                    Watch More
                   </Link>
                 </div>
               </div>
@@ -120,7 +120,7 @@ Your welcome dear good by:.زهرا
         {/* Article Section */}
         <div className="content-section article-section">
           <div className="container">
-            <h2 className="section-title">Latest Article</h2>
+            <h2 className="section-title">مقالہ جات</h2>
             <div className="content-grid">
               <div className="content-item">
                 <LazyArticle

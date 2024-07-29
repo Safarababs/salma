@@ -24,7 +24,7 @@ const LazyStory = ({ className, ...props }) => {
     return (
       <div className={`story-item ${className}`}>
         <h2>{title}</h2>
-        <p>{truncatedContent}</p>
+        <p>{truncatedContent + "....."}</p>
         {remainingContent.length > 0 && (
           <Link to="/kidsstories" className="btn btn-primary">
             Read Full Story
@@ -35,7 +35,7 @@ const LazyStory = ({ className, ...props }) => {
   };
 
   return (
-    <LazyLoad height={200} offset={100} once>
+    <LazyLoad height={200} offset={100}>
       {renderContent()}
     </LazyLoad>
   );

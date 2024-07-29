@@ -17,8 +17,12 @@ import gallery12 from "./GallaryImages/12.jpg";
 import gallery13 from "./GallaryImages/13.jpg";
 import gallery14 from "./GallaryImages/14.jpg";
 import gallery15 from "./GallaryImages/15.jpg";
+import gallery16 from "./GallaryImages/16.jpg";
+import gallery17 from "./GallaryImages/17.jpg";
 
 const images = [
+  gallery17,
+  gallery16,
   gallery15,
   gallery14,
   gallery9,
