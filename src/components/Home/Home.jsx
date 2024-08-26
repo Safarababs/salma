@@ -8,7 +8,7 @@ import About from "../About/About";
 import Activities from "../Activities/Activities";
 import Contact from "../Contact/Contact";
 import Team from "../Team/Team";
-import video from "../Knowledge Hub/Videos/Salma Batool.mp4";
+import video from "../Knowledge Hub/Videos/videosData/Salma Batool.mp4";
 const Home = () => {
   const story = {
     title: "مباہلہ",
